@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Super Cute Overview</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe0f0, #fff0ff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: #fff;
+            width: 95%;
+            max-width: 750px;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            animation: fadeIn 1s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #ff74b6;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.6;
+        }
+        .avatar {
+            width: 220px;
+            height: 220px;
+            margin: 20px 0;
+            border-radius: 50%;
+            border: 5px solid #ffd6e8;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        .gif {
+            width: 120px;
+            height: auto;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .tag {
+            display: inline-block;
+            background: #ffe0f2;
+            padding: 8px 16px;
+            border-radius: 30px;
+            margin: 5px;
+            color: #ff5a9e;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: rotate(-45deg);
+            animation: floatHeart 3s infinite;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(10px);} 
+            to {opacity: 1; transform: translateY(0);} 
+        }
+        @keyframes floatHeart {
+            0% {transform: translateY(0) rotate(-45deg); opacity:1;}
+            50% {transform: translateY(-150px) rotate(-45deg); opacity:0.5;}
+            100% {transform: translateY(-300px) rotate(-45deg); opacity:0;}
+        }
+        .timeline {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 500px;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            width: 2px;
+            height: 100%;
+            background: #ffb6d2;
+        }
+        .timeline-entry {
+            position: relative;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+        .timeline-entry::before {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: #ff74b6;
+            border-radius: 50%;
+        }
+        footer {
+            margin-top: 30px;
+            color: #ff5a9e;
+            font-weight: 600;
+        }
+        .cats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>✨ Xin chào, mình là Trinh ✨</h1>
+        <img class="avatar" src="https://media.istockphoto.com/id/1315825654/vector/cute-girl-avatar-icon.jpg" alt="Avatar dễ thương" />
+        <p>
+            Mình là một cô gái bình thường, không có gì quá đặc biệt đâu…<br>
+            chỉ là một sinh viên Công Nghệ Thông Tin năm cuối đang cố gắng từng ngày. 💗<br>
+            Mình yêu cái đẹp, thích mọi thứ dễ thương và đặc biệt là muốn làm ra những sản phẩm nhỏ bé<br>
+            nhưng mang dấu ấn của riêng mình.
+        </p>
+
+        <div class="cats">
+            <img class="gif" src="https://media.tenor.com/2roX3uxz_68AAAAC/cute-cat.gif" alt="Cute Cat GIF">
+            <img class="gif" src="https://media.tenor.com/XC3iDoRqxSIAAAAC/cat-kitten.gif" alt="Cute Cat GIF">
+            <img class="gif" src="https://media.tenor.com/HSWKHgI2RbsAAAAC/cute-cat.gif" alt="Cute Cat GIF">
+            <img class="gif" src="https://media.tenor.com/i7lgQpROxJkAAAAC/cat-cute.gif" alt="Cute Cat GIF">
+        </div>
+
+        <div>
+            <span class="tag">🎀 IT Student</span>
+            <span class="tag">☕ Simple Girl</span>
+            <span class="tag">💻 Coding Life</span>
+            <span class="tag">🌸 Cute Lover</span>
+        </div>
+
+        <div class="timeline">
+            <h2 style="color:#ff74b6;">📅 Hành trình IT của mình</h2>
+            <div class="timeline-entry"><strong>Năm 1:</strong> Làm quen với HTML, CSS, JavaScript</div>
+            <div class="timeline-entry"><strong>Năm 2:</strong> Học PHP, MySQL, bắt đầu dự án nhỏ</div>
+            <div class="timeline-entry"><strong>Năm 3:</strong> Tham gia nhóm dự án, học Git & GitHub</div>
+            <div class="timeline-entry"><strong>Năm 4:</strong> Hoàn thiện đồ án tốt nghiệp, thực hành Figma & UI/UX</div>
+        </div>
+
+        <div>
+            <h2 style="color:#ff74b6; margin-bottom:10px;">🌸 Kỹ năng nhỏ bé của mình</h2>
+            <p style="color:#555; font-size:1rem;">Mình vẫn đang học hỏi từng ngày, nhưng mình biết một chút về:</p>
+            <div>
+                <span class="tag">HTML / CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Git & GitHub</span>
+                <span class="tag">Figma</span>
+            </div>
+        </div>
+
+        <div style="margin-top:35px; text-align:center;">
+            <h2 style="color:#ff74b6; margin-bottom:10px;">🍓 Liên hệ với mình</h2>
+            <p style="color:#555; font-size:1rem;">Nếu bạn muốn kết nối với mình, hãy ghé qua nhé!</p>
+            <div>
+                <a href="#" style="text-decoration:none; color:#ff5a9e; font-weight:600; margin:0 10px;">🌐 GitHub</a>
+                <a href="https://www.facebook.com/trinh.hue.08/" style="text-decoration:none; color:#ff5a9e; font-weight:600; margin:0 10px;">📘 Facebook</a>
+                <a href="mailto:trinhfokko@gmail.com" style="text-decoration:none; color:#ff5a9e; font-weight:600; margin:0 10px;">📧 Gmail</a>
+            </div>
+        </div>
+
+        <footer>💞 Rất vui được gặp bạn! Stay cute! 💞</footer>
+
+        <!-- Heart animation -->
+        <div class="heart" style="left:50px; animation-delay:0s;"></div>
+        <div class="heart" style="left:150px; animation-delay:1s;"></div>
+        <div class="heart" style="left:250px; animation-delay:2s;"></div>
+        <div class="heart" style="left:350px; animation-delay:1.5s;"></div>
+        <div class="heart" style="left:450px; animation-delay:2.5s;"></div>
+    </div>
+</body>
+</html>
